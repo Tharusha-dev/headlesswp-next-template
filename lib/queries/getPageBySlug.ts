@@ -45,7 +45,5 @@ export default async function getPageBySlug(slug: string) {
 
   const response = await fetchGraphQL(query, variables)
 
-  console.log(response)
-
   return response.data.page as Page
 }
